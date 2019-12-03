@@ -7,16 +7,16 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.css" rel="stylesheet">
   
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><link rel="stylesheet" href="./style.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./css/main.css">
 	<style>
 	 .foo {
@@ -58,7 +58,7 @@
   <nav>
       <a class="active" href="#home">Головна</a>
     <a href="#contacts">Контакти</a>
-   <a href="#contact" data-toggle="modal" data-target="#cart">Кошик(<span class="total-count"></span>)</a>
+   <a href="#contact" data-toggle="modal" class = "openbtn"data-target="#cart">Кошик</a>
     <a href="#delivery">Доставка</a>
   </nav>
 </div>
@@ -67,264 +67,38 @@
 
 
 
+            
+           
+      
 
-<main>
-  <div class = "category"> 
-    <div class = "category-name">Пиво</div>
-  </div>
+        <div id="preview-frame">
 
-<section class = "text-center mb-4" ">
-  <div class = "container-fluid">
-  <div class = "row wow fadeIn">
-    
-    
-    <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/opillia.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
         </div>
-        <div class "card-body text-center">
-          <a href = "Opillya" сlass = "grey-text">
-            <h5>"Опілля фірмове"</h5>
+        <div id="order">
 
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
-
-              
-
-        <h4 class = "font-weight-bold green-text">
-
-          <strong>25.90</strong>
-          
-        </h4>
         </div>
-        <button type="button" data-name="Опілля(фірмове)" data-price="25.90" data-image="./images/opillia.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-    <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/opillia.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
+
+        <div id="cart-window">
+
         </div>
-        <div class "card-body text-center">
-          <a href = "OpillyaKorifey" сlass = "grey-text">
-            <h5>"Опілля корифей"</h5>
+        <div class="main-content">
+            <section id="categories">
+                <div id="categories-title">
+                    <span>Categories</span>
+                </div>
+                <div id="categories-list">
+                    <ul><!--categories loaded from API--></ul>
+                </div>
+            </section>
+            <section id="goods-content">
+                <div id="goods-content-header">
+                </div>
+                <div id="goods-container">
 
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
+                </div>
 
-              
-
-        <h4 class = "font-weight-bold green-text">
-
-          <strong>23.90</strong>
-          
-        </h4>
+            </section>
         </div>
-        <button type="button" data-name="Опілля(Корифей)" data-price="23.90" data-image="./images/opillia.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-    <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/chernyaga.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
-        </div>
-        <div class "card-body text-center">
-          <a href = "ChernigivskeSvitle" сlass = "grey-text">
-            <h5>"Чернігівське світле"</h5>
-
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
-
-          
-        <h4 class = "font-weight-bold red-text">
-
-          <strong><s>25.90</s> 20.99</strong>
-
-          
-        </h4>
-        </div>
-        <button type="button" data-name="Чернігівське(Світле)" data-price="20.99" data-image="./images/chernyaga.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-     <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/chernyaga.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
-        </div>
-        <div class "card-body text-center">
-          <a href = "ChernigivskeMaximum" сlass = "grey-text">
-            <h5>"Чернігівське максимум"</h5>
-
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
-
-          
-        <h4 class = "font-weight-bold red-text">
-
-          <strong><s>25.90</s> 19.99</strong>
-
-          
-        </h4>
-        </div>
-        <button type="button" data-name="Чернігівське(Максимум)" data-price="19.99" data-image="./images/chernyaga.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-     <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/chernyaga.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
-        </div>
-        <div class "card-body text-center">
-          <a href = "ChernigivskeRadler" сlass = "grey-text">
-            <h5>"Чернігівське Radler"</h5>
-
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
-
-          
-        <h4 class = "font-weight-bold red-text">
-
-          <strong>24.90</strong>
-
-          
-        </h4>
-        </div>
-        <button type="button" data-name="Чернігівське(Radler)" data-price="24.99" data-image="./images/chernyaga.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-     <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/opillia.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
-        </div>
-        <div class "card-body text-center">
-          <a href = "OpillyaJigul" сlass = "grey-text">
-            <h5>"Опілля жигульівське"</h5>
-
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
-
-              
-
-        <h4 class = "font-weight-bold green-text">
-
-          <strong>22.39</strong>
-          
-        </h4>
-        </div>
-        <button type="button" data-name="Опілля(Жигульівське)" data-price="22.39" data-image="./images/opillia.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-    <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/somersby.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
-        </div>
-        <div class "card-body text-center">
-          <a href = "SomersbyApple" сlass = "grey-text">
-            <h5>"Somersby apple"</h5>
-
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
-
-              
-
-        <h4 class = "font-weight-bold green-text">
-
-          <strong>26.50</strong>
-          
-        </h4>
-        </div>
-        <button type="button" data-name="Somersby(Apple)" data-price="26.50" data-image="./images/somersby.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-    <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/somersby.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
-        </div>
-        <div class "card-body text-center">
-          <a href = "Somersby Mango" сlass = "grey-text">
-            <h5>"Somersby mango"</h5>
-
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
-
-              
-
-        <h4 class = "font-weight-bold green-text">
-
-          <strong>39.99</strong>
-          
-        </h4>
-        </div>
-        <button type="button" data-name="Somersby(Mango)" data-price="39.99" data-image="./images/somersby.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-    <div class = "col-lg-3 col-md-4 mb-4">
-      <div class = "card">
-        <div class = "view overlay">
-<img class = "card-img-top" src = ./images/somersby.jpg>
-<a href = "">
-  <div class = "mask rgba=white-slight"></div>
-  </a>
-        </div>
-        <div class "card-body text-center">
-          <a href = "SomersbyPeach" сlass = "grey-text">
-            <h5>"Somersby apple"</h5>
-
-          </a>
-          <p class="product-desc">Найсмачніше пиво у світі від майстерних українських броварів</p>
-
-              
-
-        <h4 class = "font-weight-bold green-text">
-
-          <strong>22.50</strong>
-          
-        </h4>
-        </div>
-        <button type="button" data-name="Somersby(Peach)" data-price="22.50" data-image="./images/somersby.jpg" class="add-to-cart btn btn-warning">В кошик</button>
-      </div>
-    </div>
-    
-     
-    
-
-
-
-  </div>
-  </div>
-    
-</section>
-</main>
-
-
 
 
 </div>
@@ -334,28 +108,30 @@
   <a href = "https://www.facebook.com/egor.malkov.98">Yehor Malkov</a>
 </div>
 
-
-<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+<div id = "id228">
+<div class="modal fade " id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" >
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Кошик</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close cls" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-         <table class="show-cart table">
-          
-        </table>
-        <div>Загальна сума: ₴<span class="total-cart"></span></div>
+          <div class="cart-content">
+
+            </div>
+            <div>Загальна сума: ₴<span class="total-cart"></span></div>
       </div>
+
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm btn-green" data-dismiss="modal">Закрити</button>
-        <button type="button" class="btn btn-sm btn-red">Замовити</button>
+        <button type="button" class="btn btn-sm btn-green btn-dismiss" data-dismiss="modal">Закрити</button>
+        <button id = "btn-order" type="button" class="btn btn-sm btn-red btn-order" data-dismiss="modal">Замовити</button>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 
@@ -367,14 +143,14 @@
   <!-- SCRIPTS -->
   <!-- JQuery -->
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-<script  src="js/script.js"></script>
+<script  src="./js/main.js"></script>
 
 	
 </body>
