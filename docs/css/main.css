@@ -275,18 +275,7 @@ color:#DCDCDC;
   text-decoration: underline;
   cursor: pointer;
    }
-   .preview-goods-name {
-  font-weight: bold;
-  font-size: 1.2em;
-  width: 100%;
-  text-align: center; }
-
-.preview-price-header {
-  text-transform: uppercase;
-  margin: 5px 10px;
-  font-weight: bold;
-  font-family: cursive;
-  font-size: 1.4em; }
+  
 
 .medium {
   font-size: 1.1em; }
@@ -294,13 +283,7 @@ color:#DCDCDC;
 .larger {
   font-size: 1.4em; }
 
-.preview-description {
-  padding: 0 2% 1% 1.7%;
-  line-height: 1.1em;
-  text-align: justify; }
 
-.preview-price-container {
-  text-align: center; }
 
 .cancel-prev-btn {
   float: left; }
@@ -384,7 +367,9 @@ img.itemImage {
 
 .icon-description {
   font-size: 0.9em;
-  width: 100%;
+  width: 98%;
+  max-width: 100%;
+  overflow-x: hidden;
   text-align: center;
    }
    .icon-price-container {
@@ -454,7 +439,12 @@ font-family: Arial;
   height:5px;
   background-color: #FFA500;
 }
-
+.btn-dismiss{
+max-width: 40%;
+}
+.btn-order{
+max-width: 40%;
+}
 
 .total-price {
   text-align: center;
